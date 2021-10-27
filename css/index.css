@@ -104,6 +104,9 @@ select {
 .bg-light {
   background-color: hsl(var(--clr-light));
 }
+.bg-light-20 {
+  background-color: hsl(var(--clr-light) / 0.2);
+}
 .bg-white {
   background-color: hsl(var(--clr-white));
 }
