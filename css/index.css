@@ -86,3 +86,16 @@ select {
   white-space: nowrap; /* added line */
   border: 0;
 }
+
+/* Just for the challenge */
+.box {
+  background: lightblue;
+  padding: 3rem;
+}
+
+.call-to-action {
+  --gap: 5rem;
+  background: pink;
+  padding: 2rem;
+  border-radius: 1rem;
+}
