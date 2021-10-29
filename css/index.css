@@ -258,6 +258,7 @@ select {
 
 .primary-navigation {
   --gap: 8rem;
+  --underline-gap: 2rem;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -273,14 +274,15 @@ select {
 }
 
 .underlined-indicators > * {
-  padding-bottom: 2em;
-  border-bottom: 3px solid transparent;
+  padding: var(--underline-gap, 1rem) 0;
+  border-bottom: 0.2rem solid transparent;
+}
+
+.underlined-indicators > *:hover,
+.underlined-indicators > *:focus {
+  border-bottom: 3px solid hsl(var(--clr-white) / 0.5);
 }
 
 .underlined-indicators > .active {
   border-bottom: 3px solid hsl(var(--clr-white));
-}
-
-.underlined-indicators > :hover {
-  border-bottom: 3px solid hsl(var(--clr-white) / 0.5);
 }
