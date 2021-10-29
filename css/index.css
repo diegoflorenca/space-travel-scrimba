@@ -164,13 +164,15 @@ select {
 }
 
 .letter-spacing-1 {
-  letter-spacing: 2.35px;
+  letter-spacing: 4.75px;
 }
+
 .letter-spacing-2 {
   letter-spacing: 2.7px;
 }
+
 .letter-spacing-3 {
-  letter-spacing: 4.75px;
+  letter-spacing: 2.35px;
 }
 
 .uppercase {
@@ -311,4 +313,25 @@ select {
 
 .dot-indicators > [aria-selected='true'] {
   background-color: hsl(var(--clr-white) / 1);
+}
+
+.numbers-indicators > * {
+  cursor: pointer;
+  display: grid;
+  place-content: center;
+  border: 0.15rem solid hsl(var(--clr-white) / 1);
+  padding: 2.5rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: hsl(var(--clr-white) / 1);
+}
+.numbers-indicators > *:hover {
+  color: hsl(var(--clr-white) / 1);
+  background-color: hsl(var(--clr-white) / 0);
+}
+
+.numbers-indicators > [aria-selected='true'] {
+  color: hsl(var(--clr-white) / 1);
+  border: 0.15rem solid hsl(var(--clr-white) / 0.25);
+  background-color: hsl(var(--clr-white) / 0);
 }
