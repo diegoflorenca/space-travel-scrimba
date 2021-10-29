@@ -16,11 +16,21 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="uppercase text-light fs-400" style="text-align: right">
-        Design System
-      </h1>
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-top: 4rem;
+        "
+      >
+        <img src="./images/logo.svg" alt="Logo" />
+        <h1 class="uppercase text-light fs-400" style="text-align: right">
+          Design System
+        </h1>
+      </div>
 
-      <section id="colors">
+      <section id="colors" style="margin-top: 4rem">
         <h2 class="numbered-title"><span>01</span>colors</h2>
         <div class="flex" style="--gap: 2rem">
           <div class="flow" style="flex-grow: 1">
@@ -177,11 +187,35 @@
         </div>
       </section>
 
-      <section class="flow" id="interactive-elements">
+      <section class="flow" id="interactive-elements" style="margin-top: 4rem">
         <h2 class="numbered-title"><span>03</span>Interactive elements</h2>
 
         <!-- Navigation -->
-        <div></div>
+        <div>
+          <nav>
+            <ul
+              class="
+                primary-navigation
+                underlined-indicators
+                letter-spacing-2
+                ff-sans-cond
+                uppercase
+                fs-300
+                flex
+              "
+            >
+              <li class="active">
+                <a href="#" class="text-white"><span>00</span>Active</a>
+              </li>
+              <li>
+                <a href="#" class="text-white"><span>01</span>Hovered</a>
+              </li>
+              <li>
+                <a href="#" class="text-white"><span>02</span>Idle</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
 
         <div class="flex">
           <div style="margin-top: 5rem">
@@ -192,7 +226,7 @@
               >Explore</a
             >
           </div>
-          <div style="margin-bottom: 50vh">
+          <div style="margin-bottom: 60vh">
             <!-- Tabs -->
 
             <!-- Dots -->
