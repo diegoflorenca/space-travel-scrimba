@@ -231,7 +231,7 @@ select {
 
 .large-button {
   position: relative;
-  display: grid;
+  display: inline-grid;
   z-index: 1;
   place-items: center;
   padding: 0 2em;
@@ -352,5 +352,4 @@ select {
 .top-header .navigation {
   padding-inline: 7em 9em;
   background-color: hsl(var(--clr-white) / 0.05);
-  filter: blur(5rem);
 }
