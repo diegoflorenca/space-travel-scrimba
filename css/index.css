@@ -131,6 +131,10 @@ select {
   gap: var(--gap, 1rem);
 }
 
+.d-block {
+  display: block;
+}
+
 .flow > *:where(:not(:first-child)) {
   margin-top: var(--flow-space, 1rem);
 }
@@ -142,12 +146,29 @@ select {
 }
 
 .grid-container {
+  text-align: center;
   display: grid;
   border: 2px solid lightgreen;
+  place-items: center;
+  padding-inline: 1rem;
+}
+
+.grid-container * {
+  max-width: 50ch;
+}
+
+/* remove later */
+.grid-container > *:first-child {
+  border: 1px solid red;
+}
+
+.grid-container > *:last-child {
+  border: 1px solid yellow;
 }
 
 @media (min-width: 45em) {
   .grid-container {
+    text-align: left;
     column-gap: var(--container-gap, 2rem);
     grid-template-columns: minmax(2rem, 1fr) repeat(2, minmax(0, 40rem)) minmax(2rem, 1fr);
   }
@@ -160,6 +181,11 @@ select {
   .grid-container > *:last-child {
     grid-column: 3;
     border: 1px solid yellow;
+  }
+
+  .grid-container--home {
+    align-items: end;
+    padding-bottom: max(6rem, 20vh);
   }
 }
 
@@ -275,6 +301,7 @@ select {
 /* ----------------------- */
 
 .large-button {
+  font-size: 2rem;
   position: relative;
   display: inline-grid;
   z-index: 1;
