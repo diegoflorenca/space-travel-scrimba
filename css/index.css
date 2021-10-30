@@ -88,6 +88,9 @@ body {
 
   display: grid;
   grid-template-rows: min-content 1fr;
+
+  background-size: cover;
+  background-position: bottom center;
 }
 
 /* make images easier to work with */
@@ -148,22 +151,12 @@ select {
 .grid-container {
   text-align: center;
   display: grid;
-  border: 2px solid lightgreen;
   place-items: center;
   padding-inline: 1rem;
 }
 
 .grid-container * {
   max-width: 50ch;
-}
-
-/* remove later */
-.grid-container > *:first-child {
-  border: 1px solid red;
-}
-
-.grid-container > *:last-child {
-  border: 1px solid yellow;
 }
 
 @media (min-width: 45em) {
@@ -175,17 +168,10 @@ select {
 
   .grid-container > *:first-child {
     grid-column: 2;
-    border: 1px solid red;
   }
 
   .grid-container > *:last-child {
     grid-column: 3;
-    border: 1px solid yellow;
-  }
-
-  .grid-container--home {
-    align-items: end;
-    padding-bottom: max(6rem, 20vh);
   }
 }
 
@@ -424,4 +410,34 @@ select {
 .top-header .navigation {
   padding-inline: 7em 9em;
   background-color: hsl(var(--clr-white) / 0.05);
+}
+
+/* ------------------------- */
+/* Page specific             */
+/* ------------------------- */
+
+/* Home */
+@media (min-width: 45em) {
+  .grid-container--home {
+    align-items: end;
+    padding-bottom: max(6rem, 20vh);
+  }
+}
+
+/* Background */
+.home {
+  background-image: url(../assets/home/background-home-mobile.jpg);
+}
+
+@media (min-width: 35em) {
+  .home {
+    background-position: center center;
+    background-image: url(../assets/home/background-home-tablet.jpg);
+  }
+}
+
+@media (min-width: 45em) {
+  .home {
+    background-image: url(../assets/home/background-home-desktop.jpg);
+  }
 }
