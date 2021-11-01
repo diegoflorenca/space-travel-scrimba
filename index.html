@@ -17,9 +17,9 @@
       <div>
         <img src="./assets/shared/logo.svg" alt="space tourism logo" class="logo" />
       </div>
-      <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only">Menu</span></button>
+      <button class="mobile-nav-toggle" aria-expanded="false"><span class="sr-only">Menu</span></button>
       <nav>
-        <ul id="primary-navigation" aria-expanded="false" class="primary-navigation underlined-indicators flex">
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation underlined-indicators flex">
           <li class="active">
             <a href="./index.html" class="ff-sans-cond text-white letter-spacing-2 uppercase"><span>00</span>Home</a>
           </li>
@@ -46,6 +46,6 @@
       <div><a href="#" class="large-button uppercase ff-seraf bg-white text-dark">Explore</a></div>
     </div>
 
-    <script src="./js/index.js"></script>
+    <script src="./js/index.js" defer></script>
   </body>
 </html>

@@ -91,6 +91,8 @@ body {
 
   background-size: cover;
   background-position: bottom center;
+
+  overflow-x: hidden;
 }
 
 /* make images easier to work with */
@@ -340,6 +342,10 @@ select {
   margin-right: 0.5em;
 }
 
+.mobile-nav-toggle {
+  display: none;
+}
+
 @media (max-width: 35em) {
   .primary-navigation {
     --underline-gap: 0.5rem;
@@ -351,10 +357,40 @@ select {
     position: fixed;
     z-index: 1000;
     inset: 0 0 0 20%;
+    transform: translateX(100%);
+    transition: transform 500ms ease-in-out;
+  }
+
+  .primary-navigation[data-visible='true'] {
+    transform: translateX(0);
   }
 
   .primary-navigation.underlined-indicators > .active {
     border: 0;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    z-index: 2000;
+    right: 1rem;
+    top: 2rem;
+    background: transparent;
+    background-image: url(../assets/shared/icon-hamburger.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1.5rem;
+    aspect-ratio: 1;
+    border: 0;
+  }
+
+  .mobile-nav-toggle[aria-expanded='true'] {
+    background-image: url(../assets/shared/icon-close.svg);
+  }
+
+  .mobile-nav-toggle:focus-visible {
+    outline: 5px solid hsl(var(--clr-white) / 0.5);
+    outline-offset: 5px;
   }
 }
 
