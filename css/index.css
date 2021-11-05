@@ -341,6 +341,7 @@ select {
 
 .primary-header {
   justify-content: space-between;
+  align-items: center;
 }
 
 .primary-navigation {
@@ -433,10 +434,6 @@ select {
 }
 
 @media (min-width: 45em) {
-  .primary-header {
-    margin-block: 2rem;
-  }
-
   .primary-header::after {
     content: '';
     display: block;
@@ -452,6 +449,10 @@ select {
 
   nav {
     order: 2;
+  }
+
+  .primary-navigation {
+    margin-block: 2rem;
   }
 }
 
