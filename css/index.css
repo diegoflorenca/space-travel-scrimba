@@ -95,7 +95,7 @@ body {
 }
 
 /* make images easier to work with */
-img,
+img:not(hidden='true'),
 picture:not(hidden='true') {
 	max-width: 100%;
 	display: block;
