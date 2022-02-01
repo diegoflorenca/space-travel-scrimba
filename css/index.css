@@ -96,7 +96,7 @@ body {
 
 /* make images easier to work with */
 img,
-picture {
+picture:not(hidden='true') {
 	max-width: 100%;
 	display: block;
 }
@@ -575,7 +575,7 @@ body {
 	}
 }
 
-/* ------------------------- */
+/* -------------------------
 /* Layout                    */
 /* ------------------------- */
 
@@ -732,8 +732,4 @@ body {
 	/* .grid-container--crew > picture {
 		align-self: end;
 	} */
-}
-
-[role='tab']:focus {
-	color: limegreen;
 }
