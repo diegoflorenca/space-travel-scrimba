@@ -482,6 +482,7 @@ select {
 	aspect-ratio: 1;
 	border-radius: 50%;
 	background-color: hsl(var(--clr-white) / 1);
+	line-height: 0;
 }
 .numbers-indicators > *:hover {
 	color: hsl(var(--clr-white) / 1);
@@ -572,6 +573,24 @@ body {
 @media (min-width: 45em) {
 	.crew {
 		background-image: url('../assets/crew/background-crew-desktop.jpg');
+	}
+}
+
+/* Technology */
+.technology {
+	background-image: url(../assets/technology/background-technology-mobile.jpg);
+}
+
+@media (min-width: 35em) {
+	.technology {
+		background-position: center center;
+		background-image: url(../assets/technology/background-technology-tablet.jpg);
+	}
+}
+
+@media (min-width: 45em) {
+	.technology {
+		background-image: url('../assets/technology/background-technology-desktop.jpg');
 	}
 }
 
@@ -680,6 +699,46 @@ body {
 	}
 }
 
+/* Technology layout */
+.grid-container--technology {
+	padding-bottom: 0;
+	--flow-space: 2rem;
+	grid-template-areas:
+		'title'
+		'image'
+		'tabs'
+		'content';
+}
+.grid-container--technology > picture {
+	grid-area: image;
+	min-width: 100vw;
+	margin: -1rem;
+}
+
+.grid-container--technology > .numbers-indicators {
+	grid-area: tabs;
+}
+
+.grid-container--technology > .technology-details {
+	grid-area: content;
+}
+
+@media (min-width: 35em) {
+	.numbered-title {
+		justify-self: start;
+		margin-top: 2rem;
+	}
+
+	.grid-container--technology {
+		padding-bottom: 0;
+		grid-template-areas:
+			'title'
+			'image'
+			'tabs'
+			'content';
+	}
+}
+
 @media (min-width: 45em) {
 	.grid-container {
 		text-align: left;
@@ -731,5 +790,35 @@ body {
 		grid-column: span 2;
 		align-self: end;
 		max-width: 100%;
+	}
+
+	.grid-container--technology {
+		grid-template-columns: minmax(2rem, 1fr) minmax(0, 10rem) repeat(2, minmax(0, 35rem)) minmax(2rem, 1fr);
+		/* justify-items: start; */
+		grid-template-areas:
+			'. title title title .'
+			'. tabs content image .'
+			'. tabs content image .';
+	}
+
+	.grid-container--technology > .numbers-indicators {
+		flex-direction: column;
+	}
+
+	.grid-container--technology > picture {
+		grid-column: span 2;
+		justify-self: end;
+		min-width: 70%;
+		max-width: 90%;
+	}
+
+	.grid-container--technology > #vehicle-image {
+		content: url('../assets/technology/image-launch-vehicle-portrait.jpg');
+	}
+	.grid-container--technology > #spaceport-image {
+		content: url('../assets/technology/image-spaceport-portrait.jpg');
+	}
+	.grid-container--technology > #capsule-image {
+		content: url('../assets/technology/image-space-capsule-portrait.jpg');
 	}
 }

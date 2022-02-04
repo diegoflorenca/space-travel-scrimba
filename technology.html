@@ -17,7 +17,7 @@
      <title>Frontend Mentor | Space tourism website</title>
 </head>
 
-<body class="crew">
+<body class="technology">
      <a href="#main" class="skip-to-content">Skip to content</a>
      <header class="primary-header flex">
           <div>
@@ -45,82 +45,63 @@
                </ul>
           </nav>
      </header>
-     <main id="main" class="grid-container grid-container--crew flow">
+     <main id="main" class="grid-container grid-container--technology flow">
           <h1 class="numbered-title"><span aria-hidden="true">03</span> Space launch 101</h1>
 
-          <div class="dot-indicators flex" role="tablist" aria-label="crew member list">
-               <button aria-selected="true" aria-controls="commander-tab" role="tab" data-image="commander-image"
-                    tabindex="0"><span class="sr-only">The commander</span></button>
-               <button aria-selected="false" aria-controls="mission-tab" role="tab" data-image="mission-image"
-                    tabindex="-1"><span class="sr-only">The mission specialist</span></button>
-               <button aria-selected="false" aria-controls="pilot-tab" role="tab" data-image="pilot-image"
-                    tabindex="-1"><span class="sr-only">The pilot</span></button>
-               <button aria-selected="false" aria-controls="crew-tab" role="tab" data-image="crew-image"
-                    tabindex="-1"><span class="sr-only">The crew engineer</span></button>
+          <div class="numbers-indicators flex" role="tablist" aria-label="technology list">
+               <button aria-selected="true" class="ff-serif fs-600" aria-controls="vehicle-tab" role="tab"
+                    data-image="vehicle-image" tabindex="0">1</button>
+               <button aria-selected="false" class="ff-serif fs-600" aria-controls="spaceport-tab" role="tab"
+                    data-image="spaceport-image" tabindex="-1">2</button>
+               <button aria-selected="false" class="ff-serif fs-600" aria-controls="capsule-tab" role="tab"
+                    data-image="capsule-image" tabindex="-1">3</button>
           </div>
 
-          <!-- commander -->
-          <article class="crew-details flow" id="commander-tab" role="tabpanel" tabindex="0">
+          <!-- launch vehicle -->
+          <article class="technology-details flow" id="vehicle-tab" role="tabpanel" tabindex="0">
                <header class="flow flow--space-small">
-                    <h2 class="fs-600 ff-serif uppercase">Commander</h2>
-                    <p class="fs-700 uppercase ff-serif">Douglas Hurley</p>
+                    <h2 class="fs-600 ff-serif uppercase text-light">The Terminology</h2>
+                    <p class="fs-700 uppercase ff-serif">Launch Vehicle</p>
                </header>
-               <p>Douglas Gerald Hurley is an American engineer, former Marine Corps pilot
-                    and former NASA astronaut. He launched into space for the third time as
-                    commander of Crew Dragon Demo-2.</p>
+               <p>A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's
+                    surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in
+                    operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
           </article>
 
-          <!-- mission specialist -->
-          <article hidden class="crew-details flow" id="mission-tab" role="tabpanel" tabindex="0">
+          <!-- spaceport -->
+          <article hidden class="technology-details flow" id="spaceport-tab" role="tabpanel" tabindex="0">
                <header class="flow flow--space-small">
-                    <h2 class="fs-600 ff-serif uppercase">Mission Specialist</h2>
-                    <p class="fs-700 uppercase ff-serif">Mark SHuttleworth</p>
+                    <h2 class="fs-600 ff-serif uppercase text-light">The Terminology</h2>
+                    <p class="fs-700 uppercase ff-serif">Spaceport</p>
                </header>
-               <p>Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind
-                    the Linux-based Ubuntu operating system. Shuttleworth became the first South
-                    African to travel to space as a space tourist.</p>
+               <p>A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport
+                    for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally
+                    situated to take advantage of the Earth’s rotation for launch.</p>
           </article>
 
-          <!-- pilot -->
-          <article hidden class="crew-details flow" id="pilot-tab" role="tabpanel" tabindex="0">
+          <!-- spaceport -->
+          <article hidden class="technology-details flow" id="capsule-tab" role="tabpanel" tabindex="0">
                <header class="flow flow--space-small">
-                    <h2 class="fs-600 ff-serif uppercase">Pilot</h2>
-                    <p class="fs-700 uppercase ff-serif">Victor Glover</p>
+                    <h2 class="fs-600 ff-serif uppercase text-light">The Terminology</h2>
+                    <p class="fs-700 uppercase ff-serif">Space Capsule</p>
                </header>
-               <p>Pilot on the first operational flight of the SpaceX Crew Dragon to the
-                    International Space Station. Glover is a commander in the U.S. Navy where
-                    he pilots an F/A-18.He was a crew member of Expedition 64, and served as a
-                    station systems flight engineer.</p>
-          </article>
-
-          <!-- engineer -->
-          <article hidden class="crew-details flow" id="crew-tab" role="tabpanel" tabindex="0">
-               <header class="flow flow--space-small">
-                    <h2 class="fs-600 ff-serif uppercase">Flight Engineer</h2>
-                    <p class="fs-700 uppercase ff-serif">Anousheh Ansari</p>
-               </header>
-               <p>Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems.
-                    Ansari was the fourth self-funded space tourist, the first self-funded woman to
-                    fly to the ISS, and the first Iranian in space.</p>
+               <p>A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the
+                    Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It
+                    includes a space gym, cinema, and plenty of other activities to keep you entertained.</p>
           </article>
 
 
-          <picture id="commander-image">
-               <source srcset="assets/crew/image-douglas-hurley.webp" type="image/webp">
-               <img src="assets/crew/image-douglas-hurley.png" alt="Douglas Hurley">
+          <picture id="vehicle-image">
+               <img src="assets/technology/image-launch-vehicle-landscape.jpg" alt="launch vehicle">
           </picture>
-          <picture hidden id="mission-image">
-               <source srcset="assets/crew/image-mark-shuttleworth.webp" type="image/webp">
-               <img src="assets/crew/image-mark-shuttleworth.png" alt="Douglas Hurley">
+          <picture hidden id="spaceport-image">
+               <img src="assets/technology/image-spaceport-landscape.jpg" alt="spaceport">
           </picture>
-          <picture hidden id="pilot-image">
-               <source srcset="assets/crew/image-victor-glover.webp" type="image/webp">
-               <img src="assets/crew/image-victor-glover.png" alt="Douglas Hurley">
+          <picture hidden id="capsule-image">
+               <img src="assets/technology/image-space-capsule-landscape.jpg" alt="space capsule">
           </picture>
-          <picture hidden id="crew-image">
-               <source srcset="assets/crew/image-anousheh-ansari.webp" type="image/webp">
-               <img src="assets/crew/image-anousheh-ansari.png" alt="Douglas Hurley">
-          </picture>
+
+
      </main>
 </body>
 
