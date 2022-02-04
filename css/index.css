@@ -627,7 +627,7 @@ body {
 
 .grid-container--destination > picture {
 	grid-area: image;
-	max-width: 60%;
+	/* max-width: 60%; */
 	align-self: start;
 }
 
@@ -662,7 +662,7 @@ body {
 
 .grid-container--crew > picture {
 	grid-area: image;
-	max-width: 60%;
+	/* max-width: 60%; */
 	border-bottom: 1px solid hsl(var(--clr-white) / 0.1);
 }
 
