@@ -20,8 +20,8 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
 
 ## Overview
 
-This challenge was different because it is a partnership between Frontend Mentor, Kevin Powell a YouTuber CSS teacher, and Scrimba a course platform focused on technology and design.
-During the course, he encouraged the learnt by proposing small challenges that helps me to have a better understanding of the code.
+This challenge was different because it is a partnership between Frontend Mentor Kevin Powell, a YouTuber CSS teacher, and Scrimba, a course platform focused on technology and design.
+During the course, he encouraged me to learn by proposing small challenges that helped me to have a better understanding of the code.
 
 ### The challenge
 
@@ -58,7 +58,7 @@ Users should be able to:
 ### What I learned
 
 - Use z-index on the parent element to avoid sending the element too far behind
-- Keep animations separated from each other give more control to the animation of each element
+- Keep animations separated from each other to give more control to the animation of each element
 - Use `em` on media queries for cross-browser compatibility.
 - Create `grid-container` → normally done for desktop layouts, create a `grid-template-columns` with `minmax()` making the content width flexible:
   ```css
@@ -67,7 +67,7 @@ Users should be able to:
 - Difference between `place-content` and `place-itens`.
   `place-content` → Keep the content together and distribute the space around the elements.
   `place-itens` → Distribute the space between the elements.
-- Verify browser support before using a css property:
+- Verify browser support before using a CSS property:
 
   ```css
   @supports(property:value) { ...
@@ -75,14 +75,14 @@ Users should be able to:
   @supports(backdrop-filter:blur(1rem)) { ...
   ```
 
-- When the element complexity is too high, separete it by a media query.
+- When the element complexity is too high, separate it by a media query.
 - Move an element outside of the screen with the `translate` property:
   ```css
   transform: translateX(100%);
   ```
 - Scripts using the `defer` attribute will be read after all the HTML.
 - Use the `data-` attributes to manipulate elements using JavaScript instead of `classes` and `IDs`. Leaving the style for the `CSS` and the ‘action’ for the JavaScript.
-- Use `aria-hidden` for screen readers do not read the element content.
+- Use `aria-hidden` for screen readers who do not read the element content.
 
 ### Continued development
 
@@ -101,4 +101,4 @@ In the future, I want to try to rebuild this project using React.
 
 ## Acknowledgments
 
-Kevin Powell is an excellent teacher the [Build a space travel website](https://scrimba.com/learn/spacetravel) course has a lot of important information about accessibility that is essential today.
+Kevin Powell is an excellent teacher, and the [Build a Space Travel website](https://scrimba.com/learn/spacetravel) course has a lot of important information about accessibility that is essential today.
